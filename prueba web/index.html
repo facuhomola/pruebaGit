@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Facu Homola">
+	<meta name="description" content="Ejercicios prácticos 4 JAVASCRIPT">
+	<meta name="generator" content="Ejercicios prácticos 4 JAVASCRIPT">
+	<meta name="keywords" content="Ejercicios, Soluciones, Prácticas, HTML5 CSS JAVASCRIPT">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="ej7.js"></script>
+	<title>Ejercicio 7</title>
+</head>
+<body>
+
+    <header>
+        Manejador de Eventos  
+    </header> 
+
+    <div class="grid">
+        <div id="capaMouseOver" onmouseover="cambiarColor();">onMouseOver (Pase el cursor del mouse aqui)</div>
+        <div onmouseout="avisoSalida();">onMouseOut (Para ver el efecto ponga el cursor en este cuadro y luego alejelo)</div>
+        <div id="capaMouseMove" onmousemove="estilos();">onMouseMove (para ver efecto mueva el cursor sobre el cuadro)</div>
+        <div id="capaClic">onClic (para ver efecto haga clic en uno de los botones) <br>
+            <input type="button" value="Fondo de color verde" onclick="cambiaBoton('v');"> 
+            <input type="button" value="Fondo de color amarillo" onclick="cambiaBoton('a');"> 
+        </div>
+        <div onwheel="alert('Se movio la rueda del ratón');">onwheel (Para ver este evento, mueva la rueda del raton sobre este cuadro)</div>
+        <div>onkeypress (Este evento se produce al presionar una tecla)
+            <input type="text" placeholder="Presione una tecla" onkeypress="alert('Se pulso una tecla');">
+        </div>
+        <div>onkeydown (presione una tecla sobre la caja de texto para ver el efecto) <br>
+            <input type="text" id="cajaTexto" onkeydown="cajaTexto.style='background-color: green;';">
+        </div>
+        <div>onkeyup (presione un caracter en miniscula para ver el efecto) 
+            <input type="text" id="cuadroTexto" onkeyup="cuadroTexto.value = cuadroTexto.value.toUpperCase();">
+        </div>
+        <div>onmouseup y onmousedown 
+            <p id="parrafoMouse" onmouseup="mouseLevantado();" onmousedown="mousePresionado();">Haga clic para ver efecto</p>
+        </div>
+    </div>
+
+</body>
+</html>
